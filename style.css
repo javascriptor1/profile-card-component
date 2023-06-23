@@ -20,6 +20,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Kumbh Sans", sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
 main {
@@ -28,6 +30,7 @@ main {
   min-width: 300px;
   border-radius: 16px;
   overflow: hidden;
+  z-index: 999;
 }
 
 .background-div {
@@ -36,7 +39,7 @@ main {
   min-height: 150px;
 }
 
-img {
+[src="images/image-victor.jpg"] {
   position: absolute;
   border-radius: 50%;
   border: 5px solid white;
@@ -105,4 +108,27 @@ div > p {
 footer {
   margin-top: 1rem;
   color: whitesmoke;
+}
+
+[src="images/bg-pattern-top.svg"]{
+  position: absolute;
+  /* border: 2px solid yellow; */
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+  margin-top: -16rem;
+  margin-left: -3rem;
+  width: 550px;
+  height: 550px;
+
+}
+[src="images/bg-pattern-bottom.svg"]{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(45deg);
+  margin-bottom: -16rem;
+  margin-right: -3rem;
+  width: 550px;
+  height: 550px;
 }

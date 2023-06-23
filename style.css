@@ -1,25 +1,108 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-:root{
-    --dark-cyan:  hsl(185, 75%, 39%);
-    --very-dark-desaturated-blue:hsl(229, 23%, 23%);
-    --dark-grayish-blue:hsl(227, 10%, 46%);
-    --dark-gray: hsl(0, 0%, 59%);
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
 }
 
 body {
-    font-size: 18px;
-    background-image: url('images/bg-pattern-bottom.svg');
-    background-repeat: no-repeat;
-    background-color: var(--dark-cyan);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+  font-size: 1.125rem;
+  background-color: var(--dark-cyan);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
 
+main {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.background-div {
+  background-image: url("images/bg-pattern-card.svg");
+  position: relative;
+  min-height: 150px;
+}
+
+img {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid white;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  /* margin-bottom: -20%; */
+}
+.details-div {
+  background-color: white;
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.details-div h3 {
+  color: var(--very-dark-desaturated-blue);
+}
+
+h3 + p {
+  color: var(--dark-gray);
+}
+
+h3 > span {
+  color: var(--dark-gray);
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.stats-div {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  border: none;
+  color: rgb(214, 214, 214);
+  background-color: rgba(214, 214, 214, 0.733);
+  margin-top: 1.125rem;
+}
+
+div > span {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+}
+div > p {
+  color: hsl(230, 3%, 61%);
+  font-size: 12px;
+  margin-top: 6px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.stats-div__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+  color: whitesmoke;
 }

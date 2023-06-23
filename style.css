@@ -118,8 +118,8 @@ footer {
   transform: rotate(45deg);
   margin-top: -16rem;
   margin-left: -3rem;
-  width: 550px;
-  height: 550px;
+  width: 750px;
+  height: 750px;
 
 }
 [src="images/bg-pattern-bottom.svg"]{
@@ -129,6 +129,6 @@ footer {
   transform: rotate(45deg);
   margin-bottom: -16rem;
   margin-right: -3rem;
-  width: 550px;
-  height: 550px;
+  width: 750px;
+  height: 750px;
 }
